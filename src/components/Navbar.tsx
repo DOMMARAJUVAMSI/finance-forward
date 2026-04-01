@@ -40,12 +40,7 @@ const Navbar = () => {
       <nav className="section-container flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-lg flex items-center justify-center font-heading font-bold text-accent-foreground text-lg" style={{ background: "var(--accent-gradient)" }}>
-            YK
-          </div>
-          <span className={`font-heading font-bold text-xl transition-colors ${scrolled ? "text-primary" : "text-primary-foreground"}`}>
-            Innosoft
-          </span>
+          <img src={logo} alt="YK Innosoft Logo" className="h-10 w-auto" />
         </a>
 
         {/* Desktop Nav */}
