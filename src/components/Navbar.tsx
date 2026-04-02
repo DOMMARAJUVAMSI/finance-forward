@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   {
@@ -41,15 +42,10 @@ const Navbar = () => {
     >
       <nav className="section-container flex items-center justify-between h-20 md:h-24">
         
-        {/* ✅ LOGO REPLACED HERE */}
-       <a href="#" className="flex items-center">
-  <img
-    src="/logo.png"
-    alt="YK Innosoft Logo"
-    className="h-12 w-auto object-contain"
-  />
-</a>
-  
+        {/* ✅ LOGO */}
+        <a href="#" className="flex items-center gap-2">
+          <img src={logo} alt="YK Innosoft Logo" className="h-12 w-auto" />
+        </a>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
