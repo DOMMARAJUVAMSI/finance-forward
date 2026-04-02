@@ -18,6 +18,10 @@ const jsonLd = {
 
 const Index = () => (
   <>
+  <Helmet>
+  <title>YK Innosoft – Smarter Banking</title>
+  <link rel="icon" href="/favicon.ico" />
+</Helmet>
     <Helmet>
       <title>YK Innosoft – Smarter Banking, Lending & Payments Solutions</title>
       <meta name="description" content="YK Innosoft delivers secure, scalable software for Core Banking, Loan Management, Payments, and Accounting. Trusted by 100+ lenders and 50+ cooperative societies." />
@@ -28,6 +32,7 @@ const Index = () => (
       <meta property="og:type" content="website" />
       <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
     </Helmet>
+
     <Navbar />
     <main>
       <HeroSection />
